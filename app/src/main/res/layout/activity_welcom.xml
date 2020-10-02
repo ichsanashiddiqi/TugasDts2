@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".WelcomActivity">
+    
+    <ImageView
+        android:id="@+id/calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_eventlist"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to DTS VSGA"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textColor="#313131"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whats Is Going To Happen Tomorrow?"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="#313131"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+
+        <ImageView
+            android:id="@+id/foreground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_red"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="GET STARTED"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="18sp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_white"
+            android:onClick="ClickGetStarted"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_light"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="190dp"
+            android:onClick="clickLogin"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+</LinearLayout>
